@@ -9,14 +9,15 @@ Generic Python Tools
    :maxdepth: 2
    :caption: Notes
 
-   notes/*
+   quickstart <notes/quickstart>
 
 
 .. toctree::
    :maxdepth: 2
    :caption: Package Reference
 
-   wax_toolbox.cli <src/cli>
+   wax_toolbox.tsanalytics <src/tsanalytics>
+   wax_toolbox.profiling <src/profiling>
 
 
 .. toctree::
