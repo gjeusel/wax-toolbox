@@ -18,6 +18,7 @@ Generic Python Tools
 
    wax_toolbox.tsanalytics <src/tsanalytics>
    wax_toolbox.profiling <src/profiling>
+   wax_toolbox.misc_fixtures <src/misc_fixtures>
 
 
 .. toctree::
