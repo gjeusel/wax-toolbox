@@ -15,3 +15,6 @@ except DistributionNotFound:
     __version__ = 'Version not found.'
 else:
     __version__ = _dist.version
+
+
+from .profiling import Timer
