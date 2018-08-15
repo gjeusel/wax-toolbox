@@ -1,5 +1,12 @@
 CHANGES
 =======
 
+* Adding Timer in \_\_init\_\_
+* Add betamax
+* Add travis key & comment black
+* Add betamax fixture
+* Fix docs layout
+* Adding authors & changelog
+* Adding profiling & tsanalytics
 * first commit thx to soft-cookiecutter
 * First commit thx to cookiecutter
