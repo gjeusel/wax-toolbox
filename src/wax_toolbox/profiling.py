@@ -9,23 +9,23 @@ class Timer:
 
     Args:
         label (str): label of the timer
-        report_at_enter (bool): whether it should be also displayed when entering the context.
+        at_enter (bool): whether it should be also displayed when entering the context.
             Defaults to False.
-        report_func (func): function to use for reporting. Defaults to logger.info
+        report (func): function to use for reporting. Defaults to logger.info
     """
 
-    def __init__(self, label, report_at_enter=False, report_func=logger.info):
+    def __init__(self, label, at_enter=False, report=print):
         self.label = label
-        self.report_at_enter = report_at_enter
-        self.report_func = report_func
+        self.at_enter = at_enter
+        self.report = report
 
     def __enter__(self):
-        if self.report_at_enter:
-            self.report_func("{} in progress...".format(self.label))
+        if self.at_enter:
+            self.report("{} in progress...".format(self.label))
         self.start = timer()
         return self
 
     def __exit__(self, *args):
         self.end = timer()
         self.interval = self.end - self.start
-        self.report_func("{0:s} took {1:.3f} sec".format(self.label, self.interval))
+        self.report("{0:s} took {1:.3f} sec".format(self.label, self.interval))

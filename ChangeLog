@@ -4,6 +4,7 @@ CHANGES
 v0.0.1
 ------
 
+* Update changelog & add tag to trigger pypi
 * Update travis
 * update changelog
 * Adding Timer in \_\_init\_\_

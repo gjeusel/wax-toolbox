@@ -23,7 +23,7 @@ Example usage\:
 
     N = 5
 
-    with profiling.Timer("Asyncio", report_at_enter=True, report_func=print):
+    with profiling.Timer("Asyncio", at_enter=True, report=print):
         loop = asyncio.get_event_loop()
         asyncio.set_event_loop(loop)
         tasks = []
@@ -32,7 +32,7 @@ Example usage\:
         loop.run_until_complete(asyncio.wait(tasks))
         loop.close()
 
-    with profiling.Timer("ThreadPoolExecutor", report_at_enter=True, report_func=print):
+    with profiling.Timer("ThreadPoolExecutor", at_enter=True, report=print):
         futures = []
         with ThreadPoolExecutor(max_workers=4) as e:  # have you spotted it ?
             for i in range(N):
