@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* Move from src/pkg to pkg
 * Update changelog
 
 v0.0.2
