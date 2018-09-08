@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+v0.0.4
+------
+
+* Small fix
 * Move from src/pkg to pkg
 * Update changelog
 
