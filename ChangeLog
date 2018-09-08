@@ -1,9 +1,7 @@
 CHANGES
 =======
 
-v0.0.4
-------
-
+* Fix setup.cfg
 * Small fix
 * Move from src/pkg to pkg
 * Update changelog
@@ -12,10 +10,6 @@ v0.0.2
 ------
 
 * Update Timer, more simple
-
-v0.0.1
-------
-
 * Update changelog & add tag to trigger pypi
 * Update travis
 * update changelog
